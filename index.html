@@ -15,60 +15,54 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #45b7d1 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             color: #2c3e50;
             min-height: 100vh;
-            font-size: 18px;
+            font-size: 16px;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 15px;
+            padding: 10px;
         }
         
         header {
             text-align: center;
-            padding: 25px 0;
-            animation: bounce 2s ease-in-out infinite alternate;
-        }
-        
-        @keyframes bounce {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(-10px); }
+            padding: 15px 0;
         }
         
         .logo {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: bold;
             color: #fff;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 8px;
         }
         
         .tagline {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             color: #fff;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             font-weight: 600;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .game-card {
             background: rgba(255,255,255,0.95);
-            border: 3px solid #fff;
-            border-radius: 25px;
-            padding: 25px;
+            border: 2px solid rgba(255,255,255,0.8);
+            border-radius: 20px;
+            padding: 18px;
             text-align: center;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
             cursor: pointer;
             text-decoration: none;
             color: inherit;
@@ -76,55 +70,42 @@
         }
         
         .game-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            border-color: #ff6b6b;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-            animation: wiggle 0.5s ease-in-out;
-        }
-        
-        @keyframes wiggle {
-            0%, 100% { transform: translateY(-8px) scale(1.02) rotate(0deg); }
-            25% { transform: translateY(-8px) scale(1.02) rotate(1deg); }
-            75% { transform: translateY(-8px) scale(1.02) rotate(-1deg); }
+            transform: translateY(-5px) scale(1.02);
+            border-color: #667eea;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
         
         .game-icon {
-            font-size: 4.5rem;
-            margin-bottom: 15px;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            font-size: 3.5rem;
+            margin-bottom: 10px;
         }
         
         .game-title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-bottom: 15px;
-            color: #ff6b6b;
+            margin-bottom: 8px;
+            color: #667eea;
         }
         
         .game-description {
-            color: #34495e;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            font-size: 1.1rem;
+            color: #5a6c7d;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            font-size: 0.95rem;
         }
         
         .play-btn {
             display: inline-block;
-            padding: 18px 40px;
-            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
             text-decoration: none;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 1.2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1rem;
             transition: all 0.3s ease;
-            min-height: 60px;
-            min-width: 140px;
+            min-height: 45px;
+            min-width: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -132,36 +113,36 @@
         }
         
         .play-btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
-            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(45deg, #764ba2, #667eea);
         }
         
         .features {
             text-align: center;
-            margin: 40px 0;
+            margin: 20px 0;
             background: rgba(255,255,255,0.1);
-            padding: 30px 20px;
-            border-radius: 25px;
+            padding: 20px 15px;
+            border-radius: 20px;
         }
         
         .features h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
         }
         
         .feature {
-            padding: 25px;
+            padding: 15px;
             background: rgba(255,255,255,0.9);
-            border-radius: 20px;
+            border-radius: 15px;
             transition: transform 0.3s ease;
         }
         
@@ -170,96 +151,97 @@
         }
         
         .feature-icon {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
+            font-size: 2.5rem;
+            margin-bottom: 8px;
         }
         
         .feature h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
             color: #2c3e50;
-            font-weight: 700;
+            font-weight: 600;
         }
         
         footer {
             text-align: center;
-            padding: 30px 0;
-            border-top: 2px solid rgba(255,255,255,0.3);
-            margin-top: 60px;
+            padding: 15px 0;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            margin-top: 20px;
             color: #fff;
-            font-weight: 600;
+            font-weight: 500;
+            font-size: 0.9rem;
         }
         
         @media (max-width: 768px) {
             body {
-                font-size: 16px;
-            }
-            
-            .logo {
-                font-size: 2.8rem;
-            }
-            
-            .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .games-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                margin: 30px 0;
-            }
-            
-            .game-card {
-                padding: 25px 20px;
-            }
-            
-            .game-icon {
-                font-size: 4rem;
-            }
-            
-            .game-title {
-                font-size: 1.8rem;
-            }
-            
-            .play-btn {
-                padding: 16px 35px;
-                font-size: 1.1rem;
-                min-height: 55px;
-            }
-            
-            .features {
-                margin: 40px 0;
-                padding: 30px 15px;
-            }
-            
-            .features h2 {
-                font-size: 2rem;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
+                font-size: 14px;
             }
             
             .logo {
                 font-size: 2.2rem;
             }
             
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .games-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin: 15px 0;
+            }
+            
             .game-card {
-                padding: 20px 15px;
+                padding: 15px;
+            }
+            
+            .game-icon {
+                font-size: 3rem;
+            }
+            
+            .game-title {
+                font-size: 1.4rem;
             }
             
             .play-btn {
-                padding: 14px 30px;
-                font-size: 1rem;
-                min-height: 50px;
-                min-width: 120px;
+                padding: 10px 25px;
+                font-size: 0.9rem;
+                min-height: 40px;
+            }
+            
+            .features {
+                margin: 15px 0;
+                padding: 15px 10px;
+            }
+            
+            .features h2 {
+                font-size: 1.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .game-card {
+                padding: 12px;
+            }
+            
+            .play-btn {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                min-height: 35px;
+                min-width: 100px;
             }
         }
     </style>
