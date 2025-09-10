@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agam Games - Premium Card Games</title>
+    <title>Agam Games - Fun Card Games for Everyone!</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2610038930632932"
          crossorigin="anonymous"></script>
     <style>
@@ -15,145 +15,248 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0b1020 0%, #1a2142 50%, #0b1020 100%);
-            color: #e7ecf3;
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #45b7d1 100%);
+            color: #2c3e50;
             min-height: 100vh;
+            font-size: 18px;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
         
         header {
             text-align: center;
-            padding: 60px 0;
+            padding: 40px 0;
+            animation: bounce 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
         }
         
         .logo {
             font-size: 3.5rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #5b8cff, #3f6ce6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
             margin-bottom: 20px;
         }
         
         .tagline {
-            font-size: 1.2rem;
-            color: #9aa4b2;
+            font-size: 1.4rem;
+            color: #fff;
             margin-bottom: 40px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 60px 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
         }
         
         .game-card {
-            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 20px;
+            background: rgba(255,255,255,0.95);
+            border: 3px solid #fff;
+            border-radius: 25px;
             padding: 30px;
             text-align: center;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            cursor: pointer;
         }
         
         .game-card:hover {
-            transform: translateY(-5px);
-            border-color: #5b8cff;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transform: translateY(-8px) scale(1.02);
+            border-color: #ff6b6b;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            animation: wiggle 0.5s ease-in-out;
+        }
+        
+        @keyframes wiggle {
+            0%, 100% { transform: translateY(-8px) scale(1.02) rotate(0deg); }
+            25% { transform: translateY(-8px) scale(1.02) rotate(1deg); }
+            75% { transform: translateY(-8px) scale(1.02) rotate(-1deg); }
         }
         
         .game-icon {
-            font-size: 4rem;
+            font-size: 5rem;
             margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
         
         .game-title {
-            font-size: 1.8rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 15px;
-            color: #5b8cff;
+            color: #ff6b6b;
         }
         
         .game-description {
-            color: #9aa4b2;
+            color: #34495e;
             margin-bottom: 25px;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 1.1rem;
         }
         
         .play-btn {
             display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(45deg, #5b8cff, #3f6ce6);
+            padding: 18px 40px;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
             color: white;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
+            min-height: 60px;
+            min-width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
         }
         
         .play-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(91, 140, 255, 0.4);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
+            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
         }
         
         .features {
             text-align: center;
-            margin: 80px 0;
+            margin: 60px 0;
+            background: rgba(255,255,255,0.1);
+            padding: 40px 20px;
+            border-radius: 25px;
         }
         
         .features h2 {
             font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #5b8cff;
+            margin-bottom: 40px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
         }
         
         .feature {
-            padding: 20px;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
         }
         
         .feature-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 15px;
         }
         
         .feature h3 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: 700;
         }
         
         footer {
             text-align: center;
-            padding: 40px 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 80px;
+            padding: 30px 0;
+            border-top: 2px solid rgba(255,255,255,0.3);
+            margin-top: 60px;
+            color: #fff;
+            font-weight: 600;
         }
         
         @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
             .logo {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
             }
             
             .games-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
+                margin: 30px 0;
             }
             
             .game-card {
-                padding: 20px;
+                padding: 25px 20px;
+            }
+            
+            .game-icon {
+                font-size: 4rem;
+            }
+            
+            .game-title {
+                font-size: 1.8rem;
+            }
+            
+            .play-btn {
+                padding: 16px 35px;
+                font-size: 1.1rem;
+                min-height: 55px;
+            }
+            
+            .features {
+                margin: 40px 0;
+                padding: 30px 15px;
+            }
+            
+            .features h2 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .logo {
+                font-size: 2.2rem;
+            }
+            
+            .game-card {
+                padding: 20px 15px;
+            }
+            
+            .play-btn {
+                padding: 14px 30px;
+                font-size: 1rem;
+                min-height: 50px;
+                min-width: 120px;
             }
         }
     </style>
@@ -162,7 +265,7 @@
     <div class="container">
         <header>
             <h1 class="logo">🎮 Agam Games</h1>
-            <p class="tagline">Premium Card Games Experience</p>
+            <p class="tagline">🌟 Fun Card Games for Everyone! 🌟</p>
         </header>
         
         <section class="games-grid">
@@ -170,8 +273,8 @@
                 <div class="game-icon">🃏</div>
                 <h2 class="game-title">Court Piece</h2>
                 <p class="game-description">
-                    Classic Pakistani card game with strategic bidding and trump cards. 
-                    Play with friends in real-time multiplayer matches.
+                    🎉 Fun card game with friends! Easy to learn, exciting to play. 
+                    Challenge your friends and family online! 🎉
                 </p>
                 <a href="https://courtpieceindia.agams.in" class="play-btn">Play Now</a>
             </div>
@@ -180,32 +283,32 @@
                 <div class="game-icon">🎯</div>
                 <h2 class="game-title">Card Carpet</h2>
                 <p class="game-description">
-                    Memory matching game with multiple difficulty levels. 
-                    Test your memory skills with beautiful card designs.
+                    🧠 Memory matching fun! Find pairs of cards and boost your brain power. 
+                    Perfect for kids and adults! 🧠
                 </p>
                 <a href="https://cardcarpet.agams.in" class="play-btn">Play Now</a>
             </div>
         </section>
         
         <section class="features">
-            <h2>Why Choose Agam Games?</h2>
+            <h2>🎮 Why Kids Love Agam Games? 🎮</h2>
             <div class="features-grid">
                 <div class="feature">
                     <div class="feature-icon">⚡</div>
-                    <h3>Fast & Responsive</h3>
-                    <p>Optimized for all devices with smooth gameplay</p>
+                    <h3>Super Fast & Fun!</h3>
+                    <p>Works great on phones, tablets, and computers!</p>
                 </div>
                 
                 <div class="feature">
                     <div class="feature-icon">🔒</div>
-                    <h3>Secure & Private</h3>
-                    <p>Your data is protected with modern security</p>
+                    <h3>Safe & Secure</h3>
+                    <p>Parents can trust us - your kids are safe here!</p>
                 </div>
                 
                 <div class="feature">
                     <div class="feature-icon">🎨</div>
-                    <h3>Beautiful Design</h3>
-                    <p>Stunning visuals and intuitive interfaces</p>
+                    <h3>Colorful & Pretty!</h3>
+                    <p>Beautiful colors and easy-to-use games!</p>
                 </div>
             </div>
         </section>
